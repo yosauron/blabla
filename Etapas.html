@@ -1,0 +1,230 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+	<head>
+		
+		<!--jca.20120629.ini idioma en todos los dispositivos-->
+		<script>
+			var locale = '';
+			try {
+				locale = localStorage.getItem('locale');
+				if (locale == null){
+					locale = 'es_ES';
+				}
+			}
+			catch(err){
+				locale = 'es_ES';
+			}
+			document.write('<meta name="gwt:property" content="locale='+locale+'"\>');
+		</script>
+		<!--jca.20120629.fin-->
+	
+	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<!--mja.ini.20120329 cambiando los metas del next por los de e-tapas -->
+		<meta name="keywords" content="bar, restaurante, restaurant, cafeteria, coffeshop, pub, restauracion, restoration, buscador, seeker, guia, guide, comanda online, online order, reserva online, online reserve">
+		<meta name="description" content="e-tapas es una guia de restauracion donde podras pedir online y muchas mas cosas" />
+		
+		<meta name="HandheldFriendly" content="true" /> <!-- Tells the browser if the page has been built to be viewable on a small screen. Really just a true or false event, as it offers no granular control over the width of the document -->
+		<meta name="MobileOptimized" content="320" /> <!-- Indicates that the page should be rendered as if fit-to-screen were turned off -->
+
+
+		<!-- <meta name="viewport" content="target-densityDpi=device-dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> -->
+		<!-- jca.20120201.ini -->
+		<!-- modificamos el user agent para que tenga en cuenta tb a iOS -->
+		<!-- 
+		<script>
+			if (navigator.userAgent.match(/hpwOS/i) || navigator.userAgent.match(/webOS/i)) {
+				document.write("<meta name=\"viewport\" content=\"width=device-width, target-densitydpi=160, minimum-scale=1.0\">");
+			} else {
+				document.write("<meta name=\"viewport\" content=\"width=device-width, target-densitydpi=160, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no\">");
+			}
+		</script>
+		-->
+		<script type="text/javascript">
+			var especificoTagMeta = '';
+			//Si es HP o webOS
+			if (navigator.userAgent.match(/hpwOS/i) || navigator.userAgent.match(/webOS/i)) {
+				especificoTagMeta = ', target-densityDpi=160';
+			}
+			else {
+				//Apple
+				if (navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i)
+						|| navigator.userAgent.match(/iPod/i) ) {
+					especificoTagMeta = ', maximum-scale=1.0, user-scalable=no'
+				}
+				//resto
+				else {
+					//target-densityDpi=device-dpi
+					especificoTagMeta = ', target-densityDpi=160, maximum-scale=1.0, user-scalable=no'
+				}
+			}
+			document.write('<meta name=\"viewport\" content=\"width=device-width, minimum-scale=1.0'
+								+ especificoTagMeta + '\">');
+		</script>
+		<!-- jca.20120201.fin -->
+
+		<script type="text/javascript">
+			function version(){
+				return "0.0.91.650";
+			}
+		</script>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--jca.fin.20120117 -->
+		
+		<!--mja.ini.20120223: se cambian las imagenes de la aplicacion --> 
+		<!-- imagen pequeña que sale en el la barra del navegador a la izquierda -->
+		<link rel="shortcut icon" href="images/px14x15/e-tapas.png" type="image/x-icon" />
+		<!--  icono de la aplicacion: para cuando se la pongan en el escritorio -->
+		<link rel="apple-touch-icon-precomposed" href="images/px114x114/e-tapas.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/px72x72/e-tapas.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/px114x114/e-tapas.png" />
+		<!-- imagen de inicio de la aplicacion medidas: 320x460 píxeles: no hace nada, codigo mas abajo-->
+<!--		<link rel="apple-touch-startup-image" href="images/px320x460/Default.png" /> --> 
+		<!--mja.fin.20120223-->
+		
+		<!--                                                               -->
+		<!-- Consider inlining CSS to reduce the number of requested files -->
+		<!--                                                               -->
+		<link type="text/css" rel="stylesheet" href="Etapas.css">
+		<!--jca.ini.20120117 -->
+		<!-- para coger la css de next interfaces -->
+		<link type="text/css" rel="stylesheet" href="next.css">
+		<!--jca.fin.20120117 -->
+		<!--                                           -->
+		<!-- Any title is fine                         -->
+		<!--                                           -->
+		<title>e-tapas</title>
+		
+		<!--mja.ini 20120125 -->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&libraries=geometry&sensor=true"></script>
+		<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=true"></script> -->
+		<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=geometry&sensor=true"></script> -->
+		<!--mja.fin 20120125 -->
+		
+		<!--                                           -->
+		<!-- This script loads your compiled module.   -->
+		<!-- If you add any GWT meta tags, they must   -->
+		<!-- be added before this line.                -->
+		<!--                                           -->
+		<script type="text/javascript" language="javascript" src="etapas/etapas.nocache.js"></script>
+		
+		<!--jca.ini.20120331 preventivo ^^ -->
+		<script>
+			function bust () {
+				document.write = "";
+				window.top.location = window.self.location;
+				setTimeout	(	function() {
+										document.body.innerHTML = '';
+									}
+								, 0);
+			
+				window.self.onload = function(evt) {
+												document.body.innerHTML = '';
+											};
+			}
+			
+			if (window.top !== window.self) { // are you trying to put self in an iframe?
+		
+				try {
+					if (window.top.location.host) { // this is illegal to access unless you share a non-spoofable document domain
+					// fun times
+					} else {
+						bust(); // chrome executes this
+					}
+				} catch (ex) {
+					bust(); // everyone executes this
+				}
+			}
+		</script>
+		<!--jca.fin.20120331 -->
+
+		<script>
+			function playAudio(path){
+				var myAudio = new Audio(path);
+				myAudio.play();
+				return myAudio;
+			}
+		</script>
+
+
+		<!--jca.ini.20120412 -->
+		<!-- phonegap -->
+		<script type="text/javascript" charset="utf-8" language="javascript" src="./phonegap.js"></script>
+		<script type="text/javascript" charset="utf-8" language="javascript" src="./PushNotification.js"></script>
+		
+		
+		<!-- Para que cargue bien en android -->
+		<script type="text/javascript">
+			document.addEventListener('deviceready', (function(){ PhoneGap.available = true;}), false); 
+		</script>
+		<!--jca.fin.20120412 -->
+		
+		<!--mja.ini.20120426 -->
+		<script type="text/javascript" src="criptografia/sha256.js"></script>
+		<!--mja.fin.20120426 -->
+	</head>
+	
+	<!--                                           -->
+	<!-- The body can have arbitrary html, or      -->
+	<!-- you can leave the body empty if you want  -->
+	<!-- to create a completely dynamic UI.        -->
+	<!--                                           -->
+	<body>
+		<!-- mja.ini.20120223 -->
+		<!-- imagen de inicio de la aplicacion medidas: 320x460 píxeles: no hace nada, codigo mas abajo-->
+<!--		<img id="loading" src="images/px320x460/Default.png" style="width: 320px; height: 460px; position: absolute; top: 50%; left: 50%; margin: -230px 0 0 -160px;" /> --> 
+		<!-- mja.fin.20120223 -->
+		
+		<!-- OPTIONAL: include this if you want history support -->
+		<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+	
+		<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+		<noscript>
+			<div>
+				style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+				Su navegador debe tener activado JavaScript para poder ejecutar la aplicación correctamente. 
+				Your web browser must have JavaScript enabled in order for this application to display correctly.
+			</div>
+		</noscript>
+		
+		<!-- sigueme de twitter -->
+<!--
+		<div id="seguirTW" style="visibility:hidden;">
+			<a href="https://twitter.com/e_tapas" class="twitter-follow-button" data-show-count="false" data-lang="es" data-show-screen-name="false" data-size="large">Seguir a @e_tapas</a>
+		</div>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+		<!-- /sigueme de twitter -->
+		
+		<!-- me gusta de facebook -->
+<!--
+		<div id="meGustaFB"style="visibility:hidden;" >
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FetapasTM&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" 
+			style="overflow:hidden;border:none; width:110px; height:40px" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
+		</div> 
+-->
+		<!-- /me gusta de facebook -->
+		
+		<!-- google analycts -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-32094491-1']);
+			_gaq.push(['_setDomainName', 'e-tapas.com']);
+			_gaq.push(['_trackPageview']);
+			(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })(); </script><div pub-key="pub-72852a56-3902-4002-bfa1-cb6fb0afd83e" sub-key="sub-77b1dee6-8eb3-11e1-80ad-a5b34de10c0e" ssl="off" origin="pubsub.pubnub.com" id="pubnub"></div><script src="http://cdn.pubnub.com/pubnub-3.1.min.js">
+		</script>
+		<!-- /google analycts -->
+	
+	
+		<!--jca20120816.ini Para que funcione el modo depuración de PhoneGap Build-->
+		<script type="text/javascript" src="http://debug.phonegap.com/target/target-script-min.js#5890ad1e-c0f2-11e1-9883-1231391c98a7"></script>
+		<!--jca20120816.fin-->
+	</body>
+</html>

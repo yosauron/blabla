@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget 	xmlns="http://www.w3.org/ns/widgets" 
+			xmlns:gap="http://phonegap.com/ns/1.0"
+			id="com.alzago.desaetapas" 
+			version="0.0.91.650">
+
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- Parte común a todas las plataformas -->
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<name>desa-e-tapas</name>
+
+	<description>
+		Descripción de e-tapas
+	</description>
+
+	<author href="http://alzago.com" email="dpto-redessociales@e-tapas.es">
+		Alzago Soluciones Tecnológicas, S.L.
+	</author>
+
+
+<!-- 	<preference name="orientation" value="portrait" /> -->
+	<preference name="phonegap-version" value="2.0.0" />
+	<preference name="fullscreen" value="false" />
+
+	<preference name="target-device" value="universal" />
+	
+
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- Parte especifica para iOS           -->
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<preference name="webviewbounce" value="false" />
+	<preference name="prerendered-icon" value="true" />
+	<preference name="stay-in-webview" value="false" />
+	
+	
+	
+
+
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- Parte especifica para BlackBerry    -->
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<preference name="disable-cursor" value="true" />
+
+
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- Parte especifica para Android       -->
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<preference name="android-minSdkVersion" value="7" />
+<!-- <preference name="android-maxSdkVersion" value="15" /> -->	
+	
+	
+	
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- Marea de iconos                     -->
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	
+	<icon src="icon.png" />
+	
+	<!-- the default attribute can also be used -->
+	<icon src="images/logos/blackberry/etapas68.png" gap:platform="blackberry" />	
+	<!-- specifies the icon to be displayed when hovered over (on BlackBerry) -->
+	<icon src="images/logos/blackberry/etapas68Hover.png" gap:platform="blackberry" gap:state="hover" />
+
+	<!-- iOS requires specific dimensions for icons; classic iPhone screens, Retina
+	    displays, and iPad screens respectively -->
+	<icon src="images/logos/ios/etapas57.png" width="57" height="57"/>
+	<icon src="images/logos/ios/etapas72.png" gap:platform="ios" width="72" height="72"/>
+	<icon src="images/logos/ios/etapas114.png" width="114" height="114"/>
+
+	<!-- Android requires specific dimensions; ldpi, mdpi, and hdpi respectively -->
+	<icon src="images/logos/android/etapas36.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="images/logos/android/etapas48.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="images/logos/android/etapas72.png" gap:platform="android" gap:density="hdpi" />
+	
+	
+	<!-- Windows Phone 7 requires specific dimenstions or platform and role attributes -->
+	<!-- gap:platform="winphone" -->
+	<icon src="images/logos/winphone/etapas62.png" gap:platform="winphone" />
+	<!-- <icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" /> --> 
+	<!-- gap:platform="winphone" gap:role="background" -->
+<!--	<icon src="images/logos/winphone/etapas173.png" width="173" height="173" />	-->
+	
+	
+	
+	
+	
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- Splash                              -->
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- if a single splash screen is specified it will be used for all platforms.
+    Multiple splash screens are recommended for iOS -->
+<!-- 	<gap:splash src="splashes/splash.png" /> -->
+	
+	<!-- iOS requires specific dimensions for different devices; classic iPhone
+	  screens, Retina displays, and iPad screens -->
+	
+	<gap:splash src="splash.png" />
+
+	<gap:splash src="images/splashes/ios/Default.png" 			width="320" height="480" />
+	<gap:splash src="images/splashes/ios/Default_at_2x.png" 	width="640" height="960" />
+	<gap:splash src="images/splashes/ios/Default-Portrait.png" 	width="768" height="1024" />
+	<gap:splash src="images/splashes/ios/Default-Landscape.png" width="1024" height="768" />
+	
+
+	<!-- android -->	
+	<gap:splash src="images/splashes/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="images/splashes/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="images/splashes/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	
+		
+	<!-- Windows Phone 7 requires a specific dimension or platform attribute -->
+	<!-- gap:platform="winphone" -->
+	<gap:splash src="images/splashes/winphone-splash.png" width="480" height="800"/>
+	
+	
+	
+	
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+	<!-- Permisos                              -->
+	<!-- *********************************** -->
+	<!-- *********************************** -->
+ 	<preference name="permissions" value="none"/>
+	
+	<!-- to enable individual permissions use the following examples -->
+ 	
+<!-- 	<feature name="http://api.phonegap.com/1.0/battery"/> -->
+<!-- 	<feature name="http://api.phonegap.com/1.0/camera"/> -->
+<!-- 	<feature name="http://api.phonegap.com/1.0/contacts"/> -->
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<!-- 	<feature name="http://api.phonegap.com/1.0/media"/> -->
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+	<feature name="http://api.phonegap.com/1.0/device"/>
+	
+	<gap:plugin name="Pushwoosh" />
+	<access origin="https://cp.pushwoosh.com" subdomains="true" />
+
+</widget>

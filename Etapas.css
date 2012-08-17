@@ -1,0 +1,1496 @@
+/*20120306.mja.cambio de estilo a colores corporativos, consultar los cambios en coloresTransformacion.html */
+.pijamaRayas{
+	background: #cfbabf url(images/next/all/navigationContent.png);
+}
+
+.tituloRebeca {
+	vertical-align: middle;
+	background-position: 0 -246px;
+	height: 30px;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 0.6em;
+	color: #000;
+}
+
+.normalRebeca {
+	vertical-align: middle;
+	background-position: 0 -246px;
+	height: 30px;
+	white-space: nowrap;
+	font-weight: italic;
+	font-size: 0.5em;
+	color: #000;
+}
+
+.imagenBoton {
+	width: 80px;
+	height: 80px;
+}
+
+.disabled {
+	border-bottom: 1px solid #cfbabf;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+	color: gray !important;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.checkBoxDisabled {
+	background-color: #fefgfg !important;
+	color: gray !important;
+}
+
+.panelRegistros{
+	border-bottom: 1px solid #cfbabf;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+	border-spacing: 10px;
+}
+
+.textArea{
+	color: #6F071E;
+	font-weight: italic;
+	font-size: 1.1em;
+	border:1px solid #e89fab ;
+	width: 80%;
+	height: 100px;
+	/* Sombra */	
+ 	box-shadow:2px 1px 5px #b33c50; 
+ 	-webkit-box-shadow:2px 1px 5px #b33c50; 
+ 	-moz-box-shadow:2px 1px 5px #b33c50;
+}
+
+.textArea.atenuado {
+	color: #c3a7ae;
+}
+
+/******************************/
+/******************************/
+/******************************/
+/***      Generales	       ***/
+/******************************/
+/******************************/
+/******************************/
+
+.anclarAbajo {
+	position: absolute; /* Or fixed - depends on what you want */
+	right: 0; /* The part that puts the Panel in bottom right of the page/client area */
+	bottom: 0;
+}
+
+.fueraDeVision {
+	position:absolute; 
+	top: -1000px;
+	left: -1000px;
+}
+
+
+/******************************/
+/***      GWT               ***/
+/******************************/
+.gwt-Button {
+	display: inline-block;
+	background: #EB556D;
+	background-image	: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EB556D), color-stop(0.5, #cd3750), color-stop(0.5, #c12a43), to(#7B0322) );
+	padding: 2px 10px 2px 10px;
+	font-weight:bold;
+	font-size: 0.8em;
+	color: #fff;
+	text-shadow: 0 -1px 1px #77112c;
+	border:1px solid rgba(0,0,0,0.4);
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5); 
+}
+
+.gwt-SuggestBoxPopup {
+	background-color: #e0dedf;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	border: 1px #cfbabf;
+}
+.gwt-SuggestBoxPopup .item {
+  padding: 2px 6px;
+  color: #000;
+  cursor: default;
+  font-size: 110%;
+  border-top: 5px #cfbabf;
+  border-bottom: 5px #cfbabf;
+}
+.gwt-SuggestBoxPopup .item-selected {
+  background: 	#c3a7ae;
+}
+
+.gwt-ListBox {
+	font-weight: bold;
+	background: #fff;
+	color: #000;
+	width: 100%;
+	height: 100%;
+	background: white;
+	font-size: 1em;
+}
+/*******************************/
+/*    HTML                    */
+/*******************************/
+a:-webkit-any-link{
+text-decoration:none !important;
+color: black;
+}
+a:-webkit-any-link {
+color: black;
+text-decoration:none !important;
+}
+
+/******************************/
+/***      Imagenes, iconos  ***/
+/******************************/
+.logoEntrada{
+	width: 80px;
+	height: 80px;
+}
+
+/******************************/
+/******************************/
+/******************************/
+/***      Armazon  	       ***/
+/******************************/
+/******************************/
+/******************************/
+
+/******************************/
+/***      Barra navegacion  ***/
+/******************************/
+
+.tituloNavegacion {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #fff;
+	text-shadow: 0 -1px 1px #77112c;
+	text-align:center;
+	height: 44px !important;
+}
+
+.navigationBar2 {
+	position				: absolut;
+	top					: 0px;
+	left					: 0px;
+	right					: 0px;
+	height 				: 44px !important;
+	width					: 100%;
+	
+	font-size			: 1.2em;
+	font-weight			: bold;
+	border-bottom		: 1px solid #EB556D;
+/* 	padding				: 5px; */
+	text-align			: center;
+	cursor				: move;
+	background			: #cd3750;
+	background-image	: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EB556D), color-stop(0.5, #cd3750), color-stop(0.5, #c12a43), to(#7B0322) );
+	color					: #fff;
+	text-shadow			: 0 -1px 1px #77112c;
+}
+
+.tituloNavegacion .subceldaIzquierda {
+	text-align			: left;
+}
+
+.tituloNavegacion .subceldaCentral {
+
+}
+
+.tituloNavegacion .subceldaDerecha {
+	text-align			: right;
+}
+/******************************/
+/***      panelArmazon      ***/
+/******************************/
+
+.panelArmazon {
+	position				: absolute !important;
+	top					: 43px !important;
+	left					: 0px !important;
+	right					: 0px !important;
+	bottom				: 48px !important;
+}
+
+
+/******************************/
+/***      Tabs              ***/
+/******************************/
+
+.tabBar2 {
+	position: absolute;
+	right: 0; 
+	bottom: 0;
+	left: 0;
+	height: 47px;
+	width: 100%;
+	padding: 0 2px;
+
+	z-index: 50;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background: #151515;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#434343), color-stop(0.01, #434343), color-stop(0.01, #2e2e2e), color-stop(0.5, #151515), color-stop(0.5, #000), to(#000) );
+
+/* 	display: -webkit-box; 
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: right;
+	-webkit-box-pack: justify;
+*/
+}
+
+.tab {
+	width : 100%;
+	height: 100%;
+	margin: 2px 0 1px 0;
+}
+
+.tab.seleccionado {
+	background: #363636;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#494949), color-stop(0.5, #363636), color-stop(0.5, #252525), to(#252525) );
+	border-radius: 3px;
+}
+
+
+
+/******************************/
+/***     Spinner            ***/
+/******************************/
+.panelSpinner {
+	position		: fixed;
+	top			: 0px;
+	right			: 0px;
+	bottom		: 0px;
+	left			: 0px;
+	opacity		: 0.5;
+	filter		: alpha(opacity=50);	
+	-moz-opacity: .50;
+	z-index		: 25;
+	background	: #123456;
+}
+
+.panelSpinnerIntermedio {
+	position		: absolute;
+	top			: 44px;
+	right			: 0px;
+	left			: 0px;
+	bottom		: 0px;
+}
+
+.spinner {
+	position 			: absolute;
+	top					: 50%;
+	left					: 50%;
+	margin-left			: -16px;
+	margin-top			: -16px;
+	width					: 32px;
+	height				: 32px;
+	background-image	: url(images/next/all/spinner.gif);
+}
+
+/******************************/
+/******************************/
+/******************************/
+/***      Paneles		       ***/
+/******************************/
+/******************************/
+/******************************/
+.panelCompleto {
+	height: 100%;
+	width: 100%;
+}
+
+.panelAlto {
+	height: 100%;
+}
+
+.whiteSpaceNoWrap {
+	white-space: nowrap;
+}
+
+.panelCompletoAbsoluto {
+	position				: absolute;
+	top					: 0px;
+	left					: 0px;
+	right					: 0px;
+	bottom				: 0px;
+}
+
+.panelMapa {
+	position				: absolute !important;
+	top					: 0px !important;
+	left					: 0px !important;
+	right					: 0px !important;
+	bottom				: 0px !important;
+}
+
+.panelCompletoForzado {
+	height: 100% !important;
+	width: 100%  !important;
+}
+
+
+.panelSinLogo{
+	height: 80%;
+	width: 100%;
+	background: #fff;
+}
+
+.panelCompletoSinFondo {
+	height: 100%;
+	width: 100%;
+}
+
+
+.ancho_1_3 {
+	width : 33%;
+}
+
+.altura_1_2 {
+	height : 50%;
+}
+
+.subcelda40 {
+	width: 80%;
+	height: 50px;
+}
+
+.subcelda60 {
+	width: 120%;
+	height: 50px;
+	margin-left: -20%;
+}
+
+/******************************/
+/***      PanelCeldas       ***/
+/******************************/
+.panelCeldas {
+	height: 50px;
+	width: 100%;
+}
+
+.panelAncho {
+	width: 100%;
+}
+/*******************************/
+/*****	Panel simple		****/
+/*******************************/
+.panelSimple {
+	width: 100%;
+	background: #fff;
+	height: 25px;
+	border-bottom: 1px solid #cfbabf;
+	vertical-align: middle;
+	
+}
+.separador {
+	border-bottom: 1px solid #cfbabf;
+}
+
+
+/******************************/
+/***   Para pruebas  		***/
+/******************************/
+
+.bordeForzado {
+	border: 5px solid #00FFFF !important;
+}
+
+.fondoRojoForzado {
+	background: #FF0000 !important;
+}
+.fondoAzulForzado {
+	background: #0000FF !important;
+}
+.fondoVerdeForzado {
+	background: #00FF00 !important;
+}
+.fondoAmarilloForzado {
+	background: #FFFF00 !important;
+}
+.fondoNegroForzado {
+	background: #000000 !important;
+}
+.fondoBlancoForzado {
+	background: #FFFFFF !important;
+}
+
+.fondoGrisForzado {
+	background: #ECE6E9 !important;
+}
+
+
+.fondoBlanco {
+	background: #FFFFFF;
+}
+
+.fondoGris {
+	background: #ECE6E9;
+}
+
+/******************************/
+/***     Dialogos           ***/
+/******************************/
+
+.dialogBox {
+	color							: #6F071E;
+	background-color			:	#fdfdfd; 
+	border						:	1px solid #EB556D;
+	font-weight					: bold;
+	font-size					: 1.0em;
+/* 	text-shadow					: 0 -1px 1px #77112c; */
+	width							: 75%;
+	z-index						: 100;
+}
+.dialogBox .Caption {
+	font-size			: 1.2em;
+	font-weight			: bold;
+	border-bottom		: 1px solid #EB556D;
+	padding				: 5px;
+	text-align			: center;
+	cursor				: move;
+	background			: #cd3750;
+	background-image	: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EB556D), color-stop(0.5, #cd3750), color-stop(0.5, #c12a43), to(#7B0322) );
+	color					: #fff;
+	text-shadow			: 0 -1px 1px #77112c;
+}
+.dialogBox-mensaje {
+	font-size					: 1.0em;
+	padding						: 15px;
+}
+.dialogBox-botonera {
+	padding						:	5px;
+	text-align					:	center;
+}
+
+/******************************/
+/***     CeldaFormulario    ***/
+/******************************/
+
+.celdaFormulario {
+	border-spacing	: 0px;
+	width				: 100%;
+	height			: 50px;
+}
+
+.celdaFormularioSubceldaIzquierda {
+	position	: absolute;
+	top		: 0;
+	left		: 0;
+	bottom	: 0;
+	width		: 40%;
+}
+
+.celdaFormularioSubceldaDerecha {
+	position	: absolute;
+	top		: 0;
+	right		: 0;
+	bottom	: 0;
+	width		: 60%;
+}
+
+
+
+
+
+/******************************/
+/***     CeldaMultiuso      ***/
+/******************************/
+/*.celdaMultiuso:active {
+	background: #ba2545;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ba2545), color-stop(1, #960747) );
+	color: #fff;
+}*/
+.celdaMultiuso {
+
+}
+
+.celdaMultiuso.celda{
+	border-bottom: 1px solid #cfbabf;
+	background: #fff;
+	height: 50px;
+	width: 100%;
+	color: #000;
+}
+
+.celdaMultiuso.seleccionado {
+	background: #ba2545;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ba2545), color-stop(1, #960747) );
+	color: #fff;
+}
+
+.celdaMultiuso.deshabilidado {
+	color:gray !important;;
+}
+
+.celdaMultiuso.subceldaEliminada {
+	width: 0px;
+	height: 0px;
+}
+
+.celdaMultiuso.subceldaIzquierda{
+	width: 50px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.celdaMultiuso.subceldaCentral{
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.celdaMultiuso.subceldaDerecha{
+	padding-right: 10px;
+	width: 20%;
+	font-weight: bold;
+	font-size: 1.2em;	
+}
+
+.celdaMultiuso.subceldaChevron{
+	width: 30px;
+}
+
+/******************************/
+/***     Rebeca             ***/
+/******************************/
+	.panelRebecas {
+	}
+	/*.rebeca:active{
+		background-color: #ba2545 !important;
+		background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ba2545), color-stop(1, #960747) ) !important;
+		color: #fff !important;
+	}*/
+	.rebeca {
+		background: #fff;
+		width: 100%; 
+		height: 100px;
+		color: #000;
+	}
+	.rebeca.seleccionado {
+		background-color: #ba2545 !important;
+		background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ba2545), color-stop(1, #960747) ) !important;
+		color: #fff !important;
+	}
+	.rebeca.caja {
+		border-bottom: 1px solid #cfbabf;
+		vertical-align: middle;
+	}
+	.rebeca.imagen {
+		position: absolute;
+		width: 100%;
+		height: 100%; 
+		z-index: 0;
+	}
+	.rebeca.promocion {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 5px;
+		right: 2px;
+		z-index: 1;
+	}
+	.rebeca.etapas {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 5px;
+		right: 2px;
+		z-index: 1;
+	}
+	.rebeca.sinImagen {
+		width: 400px !important;
+		background: #fdfefe;
+	}
+	.rebeca.panelChevron {
+			width: 100%;
+			height: 100%; 
+			vertical-align: middle;
+	}
+	.rebeca.distancia{
+		margin-right: 10px;
+		height: 25px;
+		width: 80px;
+		float: right;
+		font-size: 1em;
+		vertical-align: middle;
+		border: 1px solid #c3a7ae;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		padding: 0px;
+		-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+		box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+		overflow: hidden;
+		text-align: center;
+		cursor: pointer;
+		border: 1px solid #cfbabf;
+		font-weight: bold;
+		color: #888585;
+		text-shadow: 0 1px 1px #F6F6F6;
+		background: #EEE;
+		background-color: #fff;
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FDFDFD), color-stop(1, #EEE) );
+		-moz-border-radius: 1em;
+		-webkit-border-radius: 1em;
+		border-radius: 1em; 
+	}
+	.rebeca.completo {
+		height: 25px !important;
+		width: 100%;
+		background: #fff;
+	}
+	.rebeca.valoracion{
+		margin-right: 10px;
+		height: 25px;
+		width: 80px;
+		float: right;
+	}
+	.rebeca.deshabilitado{
+		opacity:0.5;
+		filter:alpha(opacity=50);	
+		-moz-opacity: .50;
+	}
+	.labelDireccionRebeca {
+		font-weight: italic;
+		font-size: 1.0em;
+	}
+
+/******************************/
+/***     LogoRebeca         ***/
+/******************************/
+
+	.logoRebeca {
+	
+		background: #fff;
+		width: 100%; 
+		color: #000;
+	}
+	.logoRebeca.caja {
+		border-bottom: 1px solid #cfbabf;
+		vertical-align: middle;
+		height: 100px;
+	}
+	@-webkit-keyframes zoomer {
+		0% { -webkit-transform:scale(1) }
+		100% { -webkit-transform:scale(2) }
+	
+	}
+	
+	@-moz-keyframes zoomer {
+		0% { -moz-transform:scale(1) }
+		100% { -moz-transform:scale(2) }
+	}
+		
+	.logoRebeca.imagen {
+		height: 100px; 
+		background: #fdfefe;
+		
+		/* safari / chrome */
+	/*	-webkit-animation-name:zoomer; 
+		-webkit-animation-duration:10000ms; 
+		-webkit-animation-iteration-count:1; 
+		-webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-iteration-count: infinite;
+     */   
+        /* mozilla */
+	/*	-moz-animation-name:zoomer; 
+		-moz-animation-duration:10000ms; 
+		-moz-animation-iteration-count:1; 
+		-moz-animation-timing-function: ease-in-out;
+        -moz-animation-direction: alternate;
+        -moz-animation-iteration-count: infinite;
+	*/
+	}
+	
+	.logoRebeca.mesa {
+		height: 20px;
+		width: 100px; 
+		color: #000;
+		background: #FFF;
+		opacity: 0.6;
+		margin-top:-60px;
+		float: right;
+		text-align: center;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		font-weight: bold;
+		font-size: 1.0em;
+	}
+	
+	.logoRebeca.panelInformacion {
+		height: 40px; 
+		color: #000;
+		background: #FFF;
+		opacity: 0.6;
+		margin-top:-40px;
+	}
+	.logoRebeca.nombre {
+		font-weight: bold;
+		font-size: 1.0em;
+		text-indent: 5px;
+	}
+	.logoRebeca.direccion {
+		font-weight: italic;
+		font-size: 0.8em;
+		text-indent: 5px;
+	}
+/******************************/
+/***     Peticion           ***/
+/******************************/
+	.peticion {
+		background: #fff;
+		width: 100%; 
+		color: #000;
+		/*padding: 1px;*/
+	}
+	.peticion.caja {
+		border-bottom: 1px solid #cfbabf;
+		height: 70px;
+	}
+	.peticion.imagen {
+		width: 35px;
+		height: 28px;
+		vertical-align: middle;
+	}
+
+	.peticion.servicio {
+		font-weight: bold;
+		font-size: 1.2em;
+		/*margin-left: 5px;*/	
+		margin-bottom: 2px;
+	}
+
+	.peticion.comentario {
+		font-weight: italic;
+		font-size: 1.0em;	
+		margin-left: 15px;
+		color: gray;
+	}
+	.peticion.fecha {
+		font-weight: italic;
+		font-size: 0.8em;
+		margin-left: 15px;
+		color: blue;	
+	}
+
+/*******************************/
+/***** Buscar Direccion ********/
+/*******************************/
+.textoBusqueda{
+	width: 100%;
+	heigth: 100%;
+	font-weight: italic;
+	font-size: 1.2em;	
+	color: #6F071E;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 2px;
+}
+.textoBusqueda.atenuado {
+	color: #c3a7ae;
+}
+
+/******************************/
+/***     Mesa               ***/
+/******************************/
+.textbox {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #6F071E;
+}
+
+.label {
+	font-weight: bold;
+	font-size: 1.2em;
+/* 	color: #444; */
+}
+
+.label.centro {
+	text-align:center;
+}
+
+.labelchica {
+	font-weight: bold;
+	font-size: 1.0em;
+	text-align:center;
+}
+.mesaPadding {
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.textbox.mesa {
+	height: 1.2em;
+	vertical-align: middle;	
+/* Sombra */	
+/* 	box-shadow:12px 9px 4px #6D84A2; */
+
+/* -webkit for Safari and Google Chrome */
+	-webkit-border-top-left-radius:12px;
+	-webkit-border-top-right-radius:12px;
+	-webkit-border-bottom-left-radius:12px;
+	-webkit-border-bottom-right-radius:12px;
+/* -moz for Firefox, Flock and SeaMonkey  */
+	-moz-border-radius-topright:12px;
+	-moz-border-radius-topleft:12px; 	
+	-moz-border-radius-bottomright:12px;
+	-moz-border-radius-bottomleft:12px; 	
+}
+
+.textbox.atenuado {
+/* 	opacity: .50;
+	-moz-opacity: .50;
+	filter:alpha(opacity=50);	 */
+	color: #c3a7ae;
+}
+
+
+/****************************/
+/*** sugerencia  ***********/
+/***************************/
+
+.textbox.sugerencia {
+	border: 1px;
+	height: 150px;
+	width: 75%;
+	vertical-align: middle;
+	border: #b33c50;
+		
+/* Sombra */	
+ 	box-shadow:2px 1px 5px #b33c50; 
+ 	-webkit-box-shadow:2px 1px 5px #b33c50; 
+ 	-moz-box-shadow:2px 1px 5px #b33c50;
+
+/* -webkit for Safari and Google Chrome */
+	-webkit-border-top-left-radius:12px;
+	-webkit-border-top-right-radius:12px;
+	-webkit-border-bottom-left-radius:12px;
+	-webkit-border-bottom-right-radius:12px;
+/* -moz for Firefox, Flock and SeaMonkey  */
+	-moz-border-radius-topright:12px;
+	-moz-border-radius-topleft:12px; 	
+	-moz-border-radius-bottomright:12px;
+	-moz-border-radius-bottomleft:12px; 	
+}
+
+
+/*****************************
+ * Slider Estrellitas
+ *****************************/
+.sliderEstrellas {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	width: 80px;
+	height: 16px;	
+}
+
+.sliderEstrellas .label {
+}
+
+.sliderEstrellas .bar {
+	position: relative;
+	height: 16px;	
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+}
+
+.sliderEstrellas .bar .right {
+	position: absolute;
+	width: 80px;
+	background-image: url(images/px16x16/estrella_off.png);
+	height: 16px;
+	-webkit-background-clip: content !important;
+}
+
+.sliderEstrellas .bar .left {
+	position: relative;
+	background-image: url(images/px16x16/estrella_on.png);
+	float: left;
+	height: 16px;
+	-webkit-background-clip: content !important;
+}
+
+.sliderEstrellas .thumb {
+}
+/******************************/
+/******************************/
+/******************************/
+/***      Efectos		       ***/
+/******************************/
+/******************************/
+/******************************/
+
+/******************************/
+/***     Mohines(tembleque) ***/
+/******************************/
+
+
+@-webkit-keyframes efectoMohines {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* 
+.mohines:hover,
+.mohines:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+} */
+.mohines {
+	display:inline-block;
+	-webkit-animation-name: efectoMohines;
+	-webkit-animation-duration: 1s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;	
+}
+
+/*checkbox/radiobuntton*/
+.checkbox {
+	padding: 0em 0em !important;
+}
+
+
+/******************************/
+/***     Peticion Rebeca    ***/
+/******************************/
+	.peticionRebeca {
+		height: 120px;
+		background: #fff;
+		width: 100%; 
+		color: #000;
+		/*padding: 1px;*/
+		border-bottom: 1px solid #cfbabf;
+	}
+	
+	.detallePeticionRebeca {
+		background: #e0dedf;
+		/*height: 120px;*/
+		border-bottom: 2px solid #cfbabf;
+	}
+	.detallePeticionRebeca.nota {
+		background: #fff;
+		margin-top: 2px;
+		width: 90%;
+		font-weight: italic;
+		font-size: 1.0em;
+		/*height: 4em;*/
+		color: #6F071E;
+		border:1px solid #e89fab ;
+		/* Sombra */	
+ 		box-shadow:2px 1px 5px #b33c50; 
+ 		-webkit-box-shadow:2px 1px 5px #b33c50; 
+ 		-moz-box-shadow:2px 1px 5px #b33c50;
+	}
+	.fraudePeticionRebeca {
+		background: #cfbabf;
+		/*height: 120px;*/
+		border-bottom: 3px solid #c3a7ae;
+	}
+	
+	
+
+/******************************/
+/***     Una opinion        ***/
+/******************************/
+	.opinion {
+		height: 50px;
+		background: #e0dedf;
+		width: 100%; 
+		color: #000;
+		padding: 1px;
+		border-bottom: 1px solid #cfbabf;
+	}
+	
+	.detalleOpinion {
+		background: #e0dedf;
+		/*height: 120px;*/
+		/*border-bottom: 2px solid #cfbabf;*/
+		
+	}
+	
+	.detalleOpinion.usuario{
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	
+	.detalleOpinion.nota {
+		background: #ece6e9;
+		margin-top: 2px;
+		width: 90%;
+		font-weight: italic;
+		font-size: 1.0em;
+		text-align:left;
+		/*height: 4em;*/
+		color: #6F071E;
+		border:1px solid #e89fab ;
+		/* Sombra */	
+ 		box-shadow:2px 1px 5px #b33c50; 
+ 		-webkit-box-shadow:2px 1px 5px #b33c50; 
+ 		-moz-box-shadow:2px 1px 5px #b33c50;
+	}
+	
+/******************************/
+/***     NoHayResultados    ***/
+/******************************/
+
+	.noHayResultados {
+		background: #fff;
+		width: 100%; 
+		color: #000;
+	}
+	.noHayResultados.caja {
+		border-bottom: 1px solid #cfbabf;
+		vertical-align: middle;
+		height: 100px;
+	}
+	
+	.noHayResultados.texto {
+		color: #000;
+		background: #FFF;
+		opacity: 0.6;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.0em;
+	}
+/******************************/
+/***     MasResultados      ***/
+/******************************/
+/*	.masResultados:active{
+		background: #ba2545;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ba2545), color-stop(1, #960747) );
+		color: #fff;
+	}*/
+	.masResultados {
+		background: #fff;
+		width: 100%; 
+		color: #000;
+	}
+	.masResultados.caja {
+		border-bottom: 1px solid #cfbabf;
+		vertical-align: middle;
+		height: 50px;
+	}
+	
+	.masResultados.texto {
+		color: darkgray;
+		background: #FFF;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.0em;
+	}
+	
+	.masResultados.seleccionado{
+		background: #ba2545;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ba2545), color-stop(1, #960747) );
+		color: #fff;
+	}
+	
+/******************************/
+/***     MasResultados      ***/
+/******************************/	
+	.textoLargoRecortadoConPuntitos {
+	    text-overflow: ellipsis;
+	    -o-text-overflow: ellipsis;
+	    -moz-binding: url( 'bindings.xml#ellipsis' );
+	    white-space: nowrap;
+	    overflow: hidden;
+	    /*cuando queramos desactivar esta opcion en firefox poner:
+		-moz-binding: url( 'bindings.xml#none' );
+		*/
+	}
+/******************************/
+/***     dialogo de mapa    ***/
+/******************************/	
+	.dialogoMapa {
+	    color: #000;
+		background: #FFF;
+		/*opacity:0.5;*/	
+	}
+	.dialogoMapaNombre {
+	    font-size: 0.8em; 
+	    font-weight: bold;  
+	    text-overflow: ellipsis; 
+	    -o-text-overflow: ellipsis;
+	}
+	.dialogoMapaDireccion {
+	    font-size: 0.6em;
+	    text-overflow: ellipsis; 
+	    -o-text-overflow: ellipsis;
+	}
+	.dialogoMapaBoton {
+	    font-size: 0.8em;
+	    text-overflow: ellipsis; /*para que ponga el texto que cabe, el resto con ...*/ 
+	    -o-text-overflow: ellipsis; /*para que ponga el texto que cabe, el resto con ...*/
+	    font-size: 0.8em; 
+	    line-height:25px; /*para ajustar verticalmente*/ 
+	    width:100%;
+	    heigth: 100%; 
+	    background: #e0dedf;
+	    /* borde */
+	    border-top: 1px solid #999;
+		border-left: 1px solid #999;
+		border-right: 2px solid #555; 
+		border-bottom: 2px solid #555;
+	    /* Sombra */	
+ 		box-shadow:2px 1px 5px #b33c50; 
+ 		-webkit-box-shadow:2px 1px 5px #b33c50; 
+ 		-moz-box-shadow:2px 1px 5px #b33c50;
+	    /* -webkit for Safari and Google Chrome */
+		-webkit-border-top-left-radius:20px;
+		-webkit-border-top-right-radius:20px;
+		-webkit-border-bottom-left-radius:20px;
+		-webkit-border-bottom-right-radius:20px;
+		/* -moz for Firefox, Flock and SeaMonkey  */
+		-moz-border-radius-topright:20px;
+		-moz-border-radius-topleft:20px; 	
+		-moz-border-radius-bottomright:20px;
+		-moz-border-radius-bottomleft:20px; 
+	}
+
+	
+
+
+/******************************/
+/***     SearchBox          ***/
+/******************************/	
+.searchBox {
+	height:35px;
+	line-height: 35px;
+	/*position: absolute;
+	left: 5%;
+	right: 5%;*/
+	width:100%;
+	background: #C8C8C8 ;
+	background-image	: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFC), to(#C8C8C8) );
+}
+.searchBox.contenido {
+	background: #FFF;
+	height: 25px;
+	line-height: 25px;
+	/*padding-left: 5px;
+	padding-right: 5px;*/
+	/*position: absolute;*/
+	left: 5px;
+	right: 5px;
+	top: 0%;
+	/* -webkit for Safari and Google Chrome */
+	-webkit-border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	/* -moz for Firefox, Flock and SeaMonkey  */
+	-moz-border-radius-topright:10px;
+	-moz-border-radius-topleft:10px; 	
+	-moz-border-radius-bottomright:10px;
+	-moz-border-radius-bottomleft:10px; 
+}
+
+.searchBoxGlass{
+	position: absolute;
+	top: 13px;
+	left: 10px;	
+	width: 100%;
+	height: 100%;
+}
+.searchBoxSearchClear{
+	position: absolute;
+	top: 8px;
+	right: 5px; 
+	width: 100%;
+	height: 100%;	
+}
+.searchBoxLabel{
+	position: absolute;
+	top: 5px;
+	left: 25px;
+	right: 55px; 
+	/*background: #FF0;*/
+	font-weight: lighter;
+	font-size: 1.1em;	
+	color: #c3a7ae;
+	text-align: left;
+}
+.searchBoxSuggest{
+	position: absolute;
+	top: 5px;
+	left: 25px;
+	right: 55px; 
+	/*background: #FF0;*/
+	font-weight: bold;
+	font-size: 1.1em;	
+	color: #6F071E;
+	text-align: left;
+	border: 0px;
+}
+.searchBoxSuggest.atenuado{
+	color: #c3a7ae;
+	font-weight: lighter;
+}
+/******************************/
+/***     Promociones          ***/
+/******************************/	
+.promocion {
+	
+	/*background: #e0dedf;
+	color: #6F071E;
+	font-weight: italic;
+	font-size: 1.1em;
+	width: 100%;
+	height: 100%;
+	text-align: center;*/
+}
+.promocion.texto {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.promocion.caja{
+	margin-left:5px; 
+    margin-right:5px; 
+    margin-top:1px;
+    border-top:1px solid #9999FF; 
+    border-left: 2px solid #8888FF;  
+    border-bottom:2px solid #8888FF; 
+    border-right:2px solid #8888FF; 
+    background:#C5CCD4;
+    height:100%;
+}
+.promocion.textoPromocion {
+	color: #b33c50; 
+    text-align:center;
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.promocion.condicionesPromocio{
+	color: #b33c50; 
+    text-align:center;
+    font-size: 1.0em;
+}
+.promocion.validoHasta{
+	color: #b33c50; 
+    text-align:center;
+    font-size: 0.8em;
+}
+
+
+/*****************************************************************************/
+/*                         Tags                                              */
+/*****************************************************************************/
+.tag{
+	width:100%;
+	height:100%;
+	background-color: #eee;	
+	
+}
+.tagCelda{
+	background-color:#eee !important;
+}
+.tag.primerElemento{
+	/* border-top:1px solid rgba(0,0,0,0.4);*/
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.tag.ultimoElemento{
+	/* border-bottom:1px solid rgba(0,0,0,0.4);*/
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.panelNoVisible{
+	width:2%;
+	height: 100%;
+}
+
+/********************************************/
+/*          botones filtros                 */
+/********************************************/
+.filtro{
+	-webkit-box-flex: 1;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	background: #e89fab;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#760920), color-stop(0.08, #980D2C), color-stop(0.08, #9B0C2A), color-stop(0.5, #B20E31), color-stop(0.5, #BE1035),to(#EC1443) );	
+	border-left: 1px solid #970C2B;
+	border-right: 1px solid  #AF0E30;
+	border-top: 1px solid  #4F0617;
+	border-bottom: 1px solid #A70D2F;
+	color: #fff;
+	text-shadow: #69081C 0px -1px 1px;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.filtro.group {
+	 width		:99.9%; 
+	 height		:60px;
+}
+.filtro.celda1{
+	position	: absolute;
+	top			: 0px;
+	left		: 0%;
+	bottom		: 0px;
+	width		: 25%; 
+	height		:100%;
+}
+.filtro.celda2{
+	position	: absolute;
+	top			: 0px;
+	left		: 25%;
+	bottom		: 0px;
+	width		: 25%; 
+	height		:100%;
+}
+.filtro.celda3{
+	position	: absolute;
+	top			: 0px;
+	left		: 50%;
+	bottom		: 0px;
+	width		: 25%; 
+	height		:100%;
+}
+.filtro.celda4{
+	position	: absolute;
+	top			: 0px;
+	left		: 75%;
+	bottom		: 0px;
+	width		: 25%; 
+	height		:100%;
+}
+.filtro.seleccionado{
+	background: #db586e;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e89fab), color-stop(0.08, #980D2C), color-stop(0.08, #db586e), color-stop(0.5, #B20E31), color-stop(0.5, #BE1035),to(#EC1443) );	
+}
+
+/********************************/
+/*  tamaños de letra a utilizar */
+/********************************/
+
+.letraXS{
+	font-size: 0.8em !important;
+}
+.letraS{
+	font-size: 0.9em !important;
+}
+.letraM{
+	font-size: 1.0em !important;
+}
+.letraL{
+	font-size: 1.1em !important;
+}
+.letraXL{
+	font-size: 1.2em !important;
+}
+
+/*cambiada colores corporativos*/
+.xtextfieldPropio {
+	white-space: nowrap;
+	height: inherit;
+	border-bottom: 1px solid #cfbabf;
+	
+}
+/*cambiada colores corporativos*/
+.xtextfieldPropio .label {
+	color: black;
+	white-space: nowrap;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0.7em;
+	background: #ece6e9;
+
+}
+/*cambiada colores corporativos*/
+.xtextfieldPropio .inputfield {
+	color: #6F071E;
+	margin: 0;
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	font-size: 1.2em;
+	font-weight: bold;
+	width: 100%;
+	width: 97%;
+	height: 100%;
+	padding-left: 10px;
+	
+}
+
+
+.labelInformacion {
+	color: #6F071E;
+	margin: 5px;
+	border: 1px solid #4F0617;
+	appearance: none;
+	-webkit-appearance: none;
+	font-size: 1.0em;
+	width: 92%;
+	height: 100%;
+	padding: 5px;
+	background-color: white;
+	-webkit-border-radius: 8px;
+	padding: 5px;
+}
+
+.panelMenu{
+	margin: 5%;
+	-webkit-border-radius: 10px !important;
+	-moz-border-radius: 10px !important;
+	padding: 1%;
+	padding-top: 1px;
+	padding-bottom: 5px;
+	background-color: white !important;
+}
+
+.myBr{
+	height:30px;
+}
+.panelLogin{
+	margin: 2%;
+	-webkit-border-radius: 10px !important;
+	-moz-border-radius: 10px !important;
+	padding: 3px;
+	background-color: white !important;
+}
