@@ -2,7 +2,7 @@
 <widget 	xmlns="http://www.w3.org/ns/widgets" 
 			xmlns:gap="http://phonegap.com/ns/1.0"
 			id="com.alzago.desaetapas" 
-			version="0.0.92.650">
+			version="0.0.91.650">
 
 	<!-- *********************************** -->
 	<!-- *********************************** -->
@@ -146,7 +146,7 @@
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 	<feature name="http://api.phonegap.com/1.0/device"/>
 	
-
-<gap:plugin name="childbrowser" />
+	<gap:plugin name="PushNotification" />
+	<access origin="https://cp.pushwoosh.com" subdomains="true" />
 
 </widget>
