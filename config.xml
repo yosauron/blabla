@@ -2,7 +2,7 @@
 <widget 	xmlns="http://www.w3.org/ns/widgets" 
 			xmlns:gap="http://phonegap.com/ns/1.0"
 			id="com.alzago.desaetapas" 
-			version="0.0.89.650">
+			version="0.0.92.650">
 
 	<!-- *********************************** -->
 	<!-- *********************************** -->
@@ -21,7 +21,7 @@
 
 
 <!-- 	<preference name="orientation" value="portrait" /> -->
-	<preference name="phonegap-version" value="1.7.0" />
+	<preference name="phonegap-version" value="2.0.0" />
 	<preference name="fullscreen" value="false" />
 
 	<preference name="target-device" value="universal" />
@@ -147,7 +147,6 @@
 	<feature name="http://api.phonegap.com/1.0/device"/>
 	
 
-
-	<gap:plugin name="ChildBrowser" version="~2" /> <!-- for Cordova 1.5.0 - 1.8.1 -->
+<gap:plugin name="Child Browser" />
 
 </widget>
